@@ -1,7 +1,6 @@
 package strcut2map
 
 import (
-	"fmt"
 	"testing"
 )
 

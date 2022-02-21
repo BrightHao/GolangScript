@@ -1,7 +1,6 @@
 package strcut2map
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -98,9 +97,7 @@ func BenchmarkReflectTrans(b *testing.B) {
 		DestSite:     "DFDZ",
 		SpecialLine:  "",
 	}
-	n := b.N
-	fmt.Println("次数：", n)
-	for i := 0; i < n; i++ {
+	for i := 0; i < b.N; i++ {
 		reflectTrans(obj)
 	}
 }
